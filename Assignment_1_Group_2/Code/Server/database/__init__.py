@@ -7,6 +7,9 @@ COST_PER_HOUR = {
     2: 8,
     3: 6,
 }
+N_FLOORS = 3
+N_ROWS = 10
+N_COLS = 10
 
 class DatabaseManager:
     def __init__(self):
@@ -34,6 +37,17 @@ class DatabaseManager:
             )
         ''')
         self.db.commit()
+        self.cursor.execute('''SELECT COUNT(*) FROM parking_lots''')
+        count = self.cursor.fetchone()[0]
+        if count == 0:
+            for floor in range(1, N_FLOORS+1):
+                for row in range(1, N_ROWS+1):
+                    for col in range(1, N_COLS+1):
+                        lot_id = f"{floor}_{row}_{col}"
+                        self.cursor.execute(
+                            '''INSERT INTO parking_lots (id) VALUES (?)''', (lot_id,)
+                        )
+            self.db.commit()
 
     def close(self):
         self.db.close()
@@ -170,7 +184,7 @@ class DatabaseManager:
             )
 
             self.db.commit()
-            return True, f"Lot released successfully. Total cost:₹ {cost}."
+            return True, f"Lot released successfully. Total cost: ₹{cost}."
 
         except Exception as e:
             self.db.rollback()
