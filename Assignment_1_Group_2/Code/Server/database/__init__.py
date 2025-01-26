@@ -1,5 +1,6 @@
 from datetime import datetime
 import sqlite3
+from threading import local
 from .types import User
 
 COST_PER_HOUR = {
@@ -11,14 +12,26 @@ N_FLOORS = 3
 N_ROWS = 10
 N_COLS = 10
 
+class DatabaseConnection:
+    def __init__(self, db_path):
+        self.local = local()
+        self.db_path = db_path
+
+    def get_connection(self):
+        if not hasattr(self.local, "connection"):
+            self.local.connection = sqlite3.connect(self.db_path)
+        return self.local.connection
+
 class DatabaseManager:
     def __init__(self):
-        self.db = sqlite3.connect('database.db')
-        self.cursor = self.db.cursor()
+        self.db = DatabaseConnection("database.db")
+        self.conn = self.db.get_connection()
         self.__initialize_tables()
 
     def __initialize_tables(self):
-        self.cursor.execute('''CREATE TABLE IF NOT EXISTS users (
+        conn = self.db.get_connection()
+        cursor = conn.cursor()
+        cursor.execute('''CREATE TABLE IF NOT EXISTS users (
                    id INTEGER PRIMARY KEY AUTOINCREMENT,
                    username TEXT UNIQUE NOT NULL,
                    password TEXT NOT NULL,
@@ -27,7 +40,7 @@ class DatabaseManager:
                    usage_bill REAL DEFAULT 0
                 )
         ''')
-        self.cursor.execute('''
+        cursor.execute('''
             CREATE TABLE IF NOT EXISTS parking_lots (
                 id TEXT PRIMARY KEY,
                 booked BOOLEAN NOT NULL DEFAULT FALSE,
@@ -36,29 +49,31 @@ class DatabaseManager:
                 FOREIGN KEY(user_id) REFERENCES users(id)
             )
         ''')
-        self.db.commit()
-        self.cursor.execute('''SELECT COUNT(*) FROM parking_lots''')
-        count = self.cursor.fetchone()[0]
+        conn.commit()
+        cursor.execute('''SELECT COUNT(*) FROM parking_lots''')
+        count = cursor.fetchone()[0]
         if count == 0:
             for floor in range(1, N_FLOORS+1):
                 for row in range(1, N_ROWS+1):
                     for col in range(1, N_COLS+1):
                         lot_id = f"{floor}_{row}_{col}"
-                        self.cursor.execute(
+                        conn.execute(
                             '''INSERT INTO parking_lots (id) VALUES (?)''', (lot_id,)
                         )
-            self.db.commit()
+            self.conn.commit()
 
     def close(self):
-        self.db.close()
+        self.conn.close()
         
     def create_user(self, username, password, email, phone):
+        conn = self.db.get_connection()
+        cursor = conn.cursor()
         try:
-            self.cursor.execute(
+            cursor.execute(
                 '''INSERT INTO users (username, password, email, phone) VALUES (?, ?, ?, ?)''',
                 (username, password, email, phone)
             )
-            self.db.commit()
+            conn.commit()
             return True, "User created successfully."
 
         except sqlite3.IntegrityError as e:
@@ -83,24 +98,32 @@ class DatabaseManager:
 
 
     def get_user(self, username):
-        self.cursor.execute('''SELECT * FROM users WHERE username = ?''', (username,))
-        user = self.cursor.fetchone()
+        conn = self.db.get_connection()
+        cursor = conn.cursor()
+        cursor.execute('''SELECT * FROM users WHERE username = ?''', (username,))
+        user = cursor.fetchone()
         if user is None:
             return None
         return User(*user)
 
     def get_all_users(self):
-        self.cursor.execute('''SELECT * FROM users''')
-        return self.cursor.fetchall()
+        conn = self.db.get_connection()
+        cursor = conn.cursor()
+        cursor.execute('''SELECT * FROM users''')
+        return cursor.fetchall()
 
     def delete_user(self, username):
-        cursor = self.cursor.execute('''DELETE FROM users WHERE username = ?''', (username,))
+        conn = self.db.get_connection()
+        cursor = conn.cursor()
+        cursor.execute('''DELETE FROM users WHERE username = ?''', (username,))
         if cursor.rowcount == 0:
             return False
-        self.db.commit()
+        conn.commit()
         return True
 
     def update_user(self, username, password = None, email = None, phone = None):
+        conn = self.db.get_connection()
+        cursor = conn.cursor()
         if username is None:
             return False
         user = self.get_user(username)
@@ -112,49 +135,59 @@ class DatabaseManager:
             email = user[3]
         if phone is None:
             phone = user[4]
-        cursor = self.cursor.execute('''UPDATE users SET password = ?, email = ?, phone = ? WHERE username = ?''', (password, email, phone, username))
+        cursor.execute('''UPDATE users SET password = ?, email = ?, phone = ? WHERE username = ?''', (password, email, phone, username))
         if cursor.rowcount == 0:
             return False
-        self.db.commit()
+        conn.commit()
         return True
     
     def get_lots_info(self):
-        self.cursor.execute('''SELECT id, booked FROM parking_lots''')
-        return self.cursor.fetchall()
+        conn = self.db.get_connection()
+        cursor = conn.cursor()
+        cursor.execute('''SELECT id, booked FROM parking_lots''')
+        return cursor.fetchall()
     
     def get_bookings(self, user_id):
-        self.cursor.execute('''SELECT id, booked_at FROM parking_lots WHERE user_id = ?''', (user_id,))
-        return self.cursor.fetchall()
+        conn = self.db.get_connection()
+        cursor = conn.cursor()
+        cursor.execute('''SELECT id, booked_at FROM parking_lots WHERE user_id = ?''', (user_id,))
+        return cursor.fetchall()
     
     def get_booking(self, user_id, lot_id):
-        self.cursor.execute('''SELECT booked_at FROM parking_lots WHERE user_id = ? AND id = ?''', (user_id, lot_id))
-        booking = self.cursor.fetchone()
+        conn = self.db.get_connection()
+        cursor = conn.cursor()
+        cursor.execute('''SELECT booked_at FROM parking_lots WHERE user_id = ? AND id = ?''', (user_id, lot_id))
+        booking = cursor.fetchone()
         if booking is None:
             return None
         return booking
     
     def book_lot(self, user_id, lot_id):
+        conn = self.db.get_connection()
+        cursor = conn.cursor()
         try:
-            self.cursor.execute('''SELECT booked FROM parking_lots WHERE id = ?''', (lot_id,))
-            lot = self.cursor.fetchone()
+            cursor.execute('''SELECT booked FROM parking_lots WHERE id = ?''', (lot_id,))
+            lot = cursor.fetchone()
             if lot is None:
                 return False, "Lot not found."
             if lot[0]:
                 return False, "Lot already booked."
-            self.cursor.execute('''UPDATE parking_lots SET booked = TRUE, user_id = ?, booked_at = ? WHERE id = ?''', (user_id, datetime.now(), lot_id))
-            self.db.commit()
+            cursor.execute('''UPDATE parking_lots SET booked = TRUE, user_id = ?, booked_at = ? WHERE id = ?''', (user_id, datetime.now(), lot_id))
+            conn.commit()
             return True, "Lot booked successfully."
         except Exception as e:
-            self.db.rollback()
+            conn.rollback()
             return False, f"Error: {e}"
     
 
     def release_lot(self, lot_id, user_id):
+        conn = self.db.get_connection()
+        cursor = conn.cursor()
         try:
-            self.cursor.execute(
+            cursor.execute(
                 '''SELECT booked, booked_at, user_id FROM parking_lots WHERE id = ?''', (lot_id,)
             )
-            lot = self.cursor.fetchone()
+            lot = cursor.fetchone()
 
             if lot is None:
                 return False, "Lot not found."
@@ -175,19 +208,19 @@ class DatabaseManager:
             elapsed_hours = ((datetime.now() - booked_time).seconds + 3599) // 3600
             cost = COST_PER_HOUR[floor] * elapsed_hours
 
-            self.cursor.execute(
+            cursor.execute(
                 '''UPDATE users SET usage_bill = usage_bill + ? WHERE id = ?''', (cost, user_id)
             )
 
-            self.cursor.execute(
+            cursor.execute(
                 '''UPDATE parking_lots SET booked = FALSE, user_id = NULL, booked_at = NULL WHERE id = ?''', (lot_id,)
             )
 
-            self.db.commit()
+            conn.commit()
             return True, f"Lot released successfully. Total cost: ₹{cost}."
 
         except Exception as e:
-            self.db.rollback()
+            conn.rollback()
             return False, f"Error: {e}"
 
             
