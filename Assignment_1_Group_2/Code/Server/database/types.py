@@ -6,6 +6,13 @@ class User(object):
         self.email = email
         self.phone = phone
         self.bill = bill
-
-    def __str__(self):
-        return f"Username: {self.username}, Email: {self.email}, Phone: {self.phone}"
+    
+    def to_dict(self):
+        return {
+            "user_id": self.user_id,
+            "username": self.username,
+            "password": self.password,
+            "email": self.email,
+            "phone": self.phone,
+            "bill": self.bill
+        }

@@ -62,7 +62,7 @@ def userInfo():
         current_username = get_jwt_identity()
         user_found = db.get_user(current_username)
         bookings_found = db.get_bookings(user_found.user_id)
-        return jsonify({"user":user_found,"bookings":bookings_found})
+        return jsonify({ "user":user_found.to_dict(), "bookings":bookings_found})
     except Exception as e:
         return jsonify({"message":e}), 500
 

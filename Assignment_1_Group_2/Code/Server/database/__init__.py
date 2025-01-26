@@ -25,7 +25,6 @@ class DatabaseConnection:
 class DatabaseManager:
     def __init__(self):
         self.db = DatabaseConnection("database.db")
-        self.conn = self.db.get_connection()
         self.__initialize_tables()
 
     def __initialize_tables(self):
@@ -60,10 +59,10 @@ class DatabaseManager:
                         conn.execute(
                             '''INSERT INTO parking_lots (id) VALUES (?)''', (lot_id,)
                         )
-            self.conn.commit()
+            conn.commit()
 
     def close(self):
-        self.conn.close()
+        pass
         
     def create_user(self, username, password, email, phone):
         conn = self.db.get_connection()
