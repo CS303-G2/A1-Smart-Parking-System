@@ -3,17 +3,12 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 from flask_jwt_extended import JWTManager, create_access_token,jwt_required, get_jwt_identity
 
-
-
 app = Flask('Smart-Parking-System')
 app.config["JWT_SECRET_KEY"] = "super-secret"
 jwt = JWTManager(app)
 
 CORS(app)
-
-
 db = DatabaseManager()
-
 
 @app.post('/signup')
 def signup():
@@ -103,4 +98,7 @@ def lotRelease():
             return jsonify({"message":"Failed to release the Parking lot."}), 401
 
     except Exception as e:
-        return jsonify({"message":e}), 500 
+        return jsonify({"message":e}), 500
+    
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=11172)

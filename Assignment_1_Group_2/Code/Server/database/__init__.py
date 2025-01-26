@@ -1,6 +1,6 @@
 from datetime import datetime
 import sqlite3
-from ..types import User
+from .types import User
 
 COST_PER_HOUR = {
     1: 10,
