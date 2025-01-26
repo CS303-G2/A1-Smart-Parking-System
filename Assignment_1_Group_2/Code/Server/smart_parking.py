@@ -34,8 +34,8 @@ def signin():
         username = data['username']
         password = data['password']
         user_found = db.get_user(username)
-        if(user_found):
-            if(user_found.password != password):
+        if user_found:
+            if user_found.password != password:
                 return jsonify({"message":"invalid password"}), 401
 
             access_token = create_access_token(identity=username)
@@ -66,7 +66,7 @@ def userInfo():
     except Exception as e:
         return jsonify({"message":e}), 500
 
-@app.get('/lotBook')
+@app.post('/lotBook')
 @jwt_required()
 def lotBook():
     try:
@@ -75,7 +75,7 @@ def lotBook():
         current_username = get_jwt_identity()
         user_found = db.get_user(current_username)
         res = db.book_lot(user_found.user_id,lot_id)
-        if(res):
+        if res:
             return jsonify({"message":"Parking Lot booked Successfully."}), 200
         else:
             return jsonify({"message":"Failed to book parking lot."}), 401
@@ -83,7 +83,7 @@ def lotBook():
     except Exception as e:
         return jsonify({"message":e}), 500 
 
-@app.get('/lotRelease')
+@app.post('/lotRelease')
 @jwt_required()
 def lotRelease():
     try:
@@ -91,11 +91,11 @@ def lotRelease():
         lot_id = data['lot_id']
         current_username = get_jwt_identity()
         user_found = db.get_user(current_username)
-        res,cost = db.release_lot(lot_id=lot_id,user_id=user_found.user_id)
-        if(res):
-            return jsonify({"message":cost}), 200
+        res, msg = db.release_lot(lot_id, user_found.user_id)
+        if res:
+            return jsonify({"message":msg}), 200
         else:
-            return jsonify({"message":"Failed to release the Parking lot."}), 401
+            return jsonify({"message":msg}), 401
 
     except Exception as e:
         return jsonify({"message":e}), 500

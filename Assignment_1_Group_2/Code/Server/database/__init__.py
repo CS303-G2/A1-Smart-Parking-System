@@ -202,7 +202,7 @@ class DatabaseManager:
             if booked_at is None:
                 return False, "Invalid lot state: no booking time available."
             
-            floor = int(lot_id.split('-')[0])
+            floor = int(lot_id.split('_')[0])
             booked_time = datetime.fromisoformat(booked_at)
             elapsed_hours = ((datetime.now() - booked_time).seconds + 3599) // 3600
             cost = COST_PER_HOUR[floor] * elapsed_hours
