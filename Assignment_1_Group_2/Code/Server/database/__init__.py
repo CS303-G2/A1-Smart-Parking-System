@@ -129,11 +129,11 @@ class DatabaseManager:
         if user is None:
             return False
         if password is None:
-            password = user[2]
+            password = user.password
         if email is None:
-            email = user[3]
+            email = user.email
         if phone is None:
-            phone = user[4]
+            phone = user.phone
         cursor.execute('''UPDATE users SET password = ?, email = ?, phone = ? WHERE username = ?''', (password, email, phone, username))
         if cursor.rowcount == 0:
             return False
