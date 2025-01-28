@@ -8,7 +8,7 @@ app.config["JWT_SECRET_KEY"] = "super-secret"
 jwt = JWTManager(app)
 
 CORS(app)
-db = DatabaseManager()
+db = DatabaseManager('database.db')
 
 @app.post('/signup')
 def signup():

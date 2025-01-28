@@ -23,8 +23,8 @@ class DatabaseConnection:
         return self.local.connection
 
 class DatabaseManager:
-    def __init__(self):
-        self.db = DatabaseConnection("database.db")
+    def __init__(self, db_path):
+        self.db = DatabaseConnection(db_path)
         self.__initialize_tables()
 
     def __initialize_tables(self):
