@@ -9,6 +9,7 @@ import SignUp from "./components/SignUp.jsx";
 import Dashboard from "./components/Dashboard";
 import Bookslot from "./components/Bookslot";
 import Bookings from "./components/Bookings.jsx";
+import Profile from "./components/Profile.jsx";
 import { ToastContainer } from "react-toastify";
 
 // import AdminDashboard from './components/AdminDashboard'
@@ -22,6 +23,7 @@ function App() {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/book" element={<Bookslot />} />
         <Route path="/bookings" element={<Bookings />} />
+        <Route path="/profile" element={<Profile />} />
         {/* <Route path="/admin" element={<AdminDashboard />} /> */}
       </Routes>
       <ToastContainer />

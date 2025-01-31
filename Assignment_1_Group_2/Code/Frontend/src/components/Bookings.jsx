@@ -31,12 +31,13 @@ function Bookings() {
 
         const response = await getUserInfo(token);
         const data = response.bookings;
-
+        
         // Transform response into rows
         const transformedData = Object.keys(data).map((key, index) => ({
           id: index + 1, // Assign a unique ID
           lotId: data[index][0],
           timeStamp: formatTimestamp(data[index][1]), // Format the timestamp
+          price: `₹${12 - 2 * Number(data[index][0][0])}/hr`
         }));
 
         setBookings(transformedData);
@@ -66,7 +67,7 @@ function Bookings() {
         setBookings((prev) =>
           prev.filter((booking) => booking.lotId !== lotId)
         );
-        alert("Booking successfully removed!");
+        alert(response.data.message);
       } else {
         alert("Failed to remove booking: " + response.data.message);
       }
@@ -80,18 +81,19 @@ function Bookings() {
     { field: "id", headerName: "ID", flex: 1 },
     { field: "lotId", headerName: "Lot ID", flex: 2 },
     { field: "timeStamp", headerName: "Timestamp", flex: 3 },
+    { field: "price", headerName: "Price", flex: 2 },
     {
       field: "actions",
       headerName: "Actions",
       sortable: false,
-      flex: 1,
+      flex: 2,
       renderCell: (params) => (
         <Button
           variant="contained"
           color="error"
           onClick={() => handleRemoveBooking(params.row.lotId)}
         >
-          Remove
+          Release
         </Button>
       ),
     },

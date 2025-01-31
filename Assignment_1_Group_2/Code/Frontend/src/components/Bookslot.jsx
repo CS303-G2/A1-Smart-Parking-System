@@ -89,7 +89,7 @@ function Bookslot() {
                 <option value="">-- Select Level --</option>
                 {levels.map((level) => (
                   <option key={level} value={level}>
-                    Level {level}
+                    Level {level} (₹{12 - 2 * level}/hr)
                   </option>
                 ))}
               </select>

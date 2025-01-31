@@ -11,9 +11,7 @@ import MenuItem from "@mui/material/MenuItem";
 import Drawer from "@mui/material/Drawer";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
-import ColorModeIconDropdown from "../shared-theme/ColorModeIconDropdown.jsx";
-import { Link, useNavigate } from "react-router-dom";
-
+import { Link, useNavigate, useLocation } from "react-router-dom";
 const StyledToolbar = styled(Toolbar)(({ theme }) => ({
   display: "flex",
   alignItems: "center",
@@ -33,6 +31,7 @@ const StyledToolbar = styled(Toolbar)(({ theme }) => ({
 export default function AppAppBar() {
   const navigate = useNavigate();
   const [open, setOpen] = React.useState(false);
+  const location = useLocation();
 
   const handleSignOut = () => {
     localStorage.removeItem("jwt_token");
@@ -68,11 +67,10 @@ export default function AppAppBar() {
                   color="black"
                   size="small"
                   style={{
-                    color: "black",
+                    color: location.pathname === "/book" ? "white" : "black",
                     transition: "color 0.3s ease", // Smooth transition
                   }}
                   onMouseEnter={(e) => (e.target.style.color = "white")}
-                  onMouseLeave={(e) => (e.target.style.color = "black")}
                 >
                   Book-a-Slot
                 </Button>
@@ -83,13 +81,27 @@ export default function AppAppBar() {
                   color="black"
                   size="small"
                   style={{
-                    color: "black",
+                    color:
+                      location.pathname === "/bookings" ? "white" : "black",
                     transition: "color 0.3s ease", // Smooth transition
                   }}
                   onMouseEnter={(e) => (e.target.style.color = "white")}
-                  onMouseLeave={(e) => (e.target.style.color = "black")}
                 >
                   Your-Bookings
+                </Button>
+              </Link>
+              <Link to="/profile">
+                <Button
+                  variant="text"
+                  color="black"
+                  size="small"
+                  style={{
+                    color: location.pathname === "/profile" ? "white" : "black",
+                    transition: "color 0.3s ease", // Smooth transition
+                  }}
+                  onMouseEnter={(e) => (e.target.style.color = "white")}
+                >
+                  Profile
                 </Button>
               </Link>
             </Box>
@@ -111,7 +123,6 @@ export default function AppAppBar() {
             </Button>
           </Box>
           <Box sx={{ display: { xs: "flex", md: "none" }, gap: 1 }}>
-            <ColorModeIconDropdown size="medium" />
             <IconButton aria-label="Menu button" onClick={toggleDrawer(true)}>
               <MenuIcon />
             </IconButton>
@@ -142,6 +153,9 @@ export default function AppAppBar() {
                 </Link>
                 <Link to={"/bookings"}>
                   <MenuItem>Your-Bookings</MenuItem>
+                </Link>
+                <Link to={"/profile"}>
+                  <MenuItem>Profile</MenuItem>
                 </Link>
                 <Divider sx={{ my: 3 }} />
                 <MenuItem>
