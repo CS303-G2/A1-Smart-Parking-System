@@ -1,0 +1,1841 @@
+{
+ "name": "Software Engineering",
+ "type": "private_group",
+ "id": 4708608913,
+ "messages": [
+  {
+   "id": 76448,
+   "type": "message",
+   "date": "2025-01-25T22:47:31",
+   "date_unixtime": "1737825451",
+   "from": "Sam",
+   "from_id": "user1508065553",
+   "text": "So our assignment project is  \"Smart Parking System\"\n\n● Description: Build a system to detect available parking slots and prevent double\nbookings, ensuring a seamless user experience.\n● Focus Areas:\n1. Usability: Provide clear parking slot availability and reservation status.\n2. Reliability: Prevent errors like assigning a single slot to multiple vehicles.\n3. Performance: Ensure the system remains fast and responsive during peak\nusage.",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "So our assignment project is  \"Smart Parking System\"\n\n● Description: Build a system to detect available parking slots and prevent double\nbookings, ensuring a seamless user experience.\n● Focus Areas:\n1. Usability: Provide clear parking slot availability and reservation status.\n2. Reliability: Prevent errors like assigning a single slot to multiple vehicles.\n3. Performance: Ensure the system remains fast and responsive during peak\nusage."
+    }
+   ]
+  },
+  {
+   "id": 76449,
+   "type": "message",
+   "date": "2025-01-25T22:53:13",
+   "date_unixtime": "1737825793",
+   "from": "Sam",
+   "from_id": "user1508065553",
+   "text": [
+    "We will make a python backend with flask — Krish and I will handle that\n\nfor the frontend,\nI think we should make a website with html and js\n",
+    {
+     "type": "mention_name",
+     "text": "Luv Sharma",
+     "user_id": 7676109429
+    },
+    " can you do that?\n\nRequirements and Testing — Bilal?\n\nand the Documentation — Sunil?"
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "We will make a python backend with flask — Krish and I will handle that\n\nfor the frontend,\nI think we should make a website with html and js\n"
+    },
+    {
+     "type": "mention_name",
+     "text": "Luv Sharma",
+     "user_id": 7676109429
+    },
+    {
+     "type": "plain",
+     "text": " can you do that?\n\nRequirements and Testing — Bilal?\n\nand the Documentation — Sunil?"
+    }
+   ]
+  },
+  {
+   "id": 76450,
+   "type": "message",
+   "date": "2025-01-25T22:54:10",
+   "date_unixtime": "1737825850",
+   "from": "Sam",
+   "from_id": "user1508065553",
+   "text": "Please confirm asap and let me know if there are any problems",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Please confirm asap and let me know if there are any problems"
+    }
+   ]
+  },
+  {
+   "id": 76451,
+   "type": "message",
+   "date": "2025-01-25T22:54:46",
+   "date_unixtime": "1737825886",
+   "edited": "2025-01-25T22:55:13",
+   "edited_unixtime": "1737825913",
+   "from": "Bilal",
+   "from_id": "user1607239427",
+   "text": "Yeah I am fine with requirements and testing the product",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Yeah I am fine with requirements and testing the product"
+    }
+   ],
+   "reactions": [
+     {
+      "type": "emoji",
+      "count": 1,
+      "emoji": "👍",
+      "recent": [
+       {
+        "from": "Sam",
+        "from_id": "user1508065553",
+        "date": "2025-01-25T22:55:13"
+       }
+      ]
+     }
+    ]
+  },
+  {
+   "id": 76452,
+   "type": "message",
+   "date": "2025-01-25T22:55:31",
+   "date_unixtime": "1737825931",
+   "from": "Sam",
+   "from_id": "user1508065553",
+   "text": "These are the things that we are supposed to submit\n\n1. Codebase: Complete implementation of the assigned project.\n2. Documentation:\n     ○ Requirements Document.\n     ○ Testing Report.\n     ○ User Guide.\n3. Collaboration Evidence:\n     ○ Screenshots/logs of Trello, GitHub, and Telegram usage.",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "These are the things that we are supposed to submit\n\n1. Codebase: Complete implementation of the assigned project.\n2. Documentation:\n     ○ Requirements Document.\n     ○ Testing Report.\n     ○ User Guide.\n3. Collaboration Evidence:\n     ○ Screenshots/logs of Trello, GitHub, and Telegram usage."
+    }
+   ]
+  },
+  {
+   "id": 76454,
+   "type": "message",
+   "date": "2025-01-25T22:58:21",
+   "date_unixtime": "1737826101",
+   "edited": "2025-01-25T22:58:33",
+   "edited_unixtime": "1737826113",
+   "from": "Krish",
+   "from_id": "user5190451166",
+   "reply_to_message_id": 76450,
+   "text": "I am also fine for writing python code for backend 👍",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "I am also fine for writing python code for backend 👍"
+    }
+   ],
+   "reactions": [
+     {
+      "type": "emoji",
+      "count": 1,
+      "emoji": "👍",
+      "recent": [
+       {
+        "from": "Sam",
+        "from_id": "user1508065553",
+        "date": "2025-01-25T22:58:33"
+       }
+      ]
+     }
+    ]
+  },
+  {
+   "id": 76455,
+   "type": "message",
+   "date": "2025-01-25T22:59:47",
+   "date_unixtime": "1737826187",
+   "from": "Sam",
+   "from_id": "user1508065553",
+   "text": "Also I'll manage the integration of frontend with the backend so lemme know if there are any problems :)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Also I'll manage the integration of frontend with the backend so lemme know if there are any problems :)"
+    }
+   ]
+  },
+  {
+   "id": 76479,
+   "type": "message",
+   "date": "2025-01-26T10:00:13",
+   "date_unixtime": "1737865813",
+   "from": "Luv Sharma",
+   "from_id": "user7676109429",
+   "reply_to_message_id": 76449,
+   "text": "Is it possible to use react rather than vanilla html?",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Is it possible to use react rather than vanilla html?"
+    }
+   ]
+  },
+  {
+   "id": 76480,
+   "type": "message",
+   "date": "2025-01-26T10:02:32",
+   "date_unixtime": "1737865952",
+   "from": "Bilal",
+   "from_id": "user1607239427",
+   "text": "I guess there is no problem with react",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "I guess there is no problem with react"
+    }
+   ]
+  },
+  {
+   "id": 76481,
+   "type": "message",
+   "date": "2025-01-26T10:02:37",
+   "date_unixtime": "1737865957",
+   "edited": "2025-01-26T10:03:05",
+   "edited_unixtime": "1737865985",
+   "from": "Sam",
+   "from_id": "user1508065553",
+   "reply_to_message_id": 76479,
+   "text": "Yeah sure",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Yeah sure"
+    }
+   ],
+   "reactions": [
+     {
+      "type": "emoji",
+      "count": 1,
+      "emoji": "👍",
+      "recent": [
+       {
+        "from": "Luv Sharma",
+        "from_id": "user7676109429",
+        "date": "2025-01-26T10:03:05"
+       }
+      ]
+     }
+    ]
+  },
+  {
+   "id": 76496,
+   "type": "message",
+   "date": "2025-01-26T11:06:07",
+   "date_unixtime": "1737869767",
+   "from": "Bilal",
+   "from_id": "user1607239427",
+   "text": [
+    "1.",
+    {
+     "type": "bold",
+     "text": "User Login/Signup"
+    },
+    "\n-Allow users to create accounts using email.\n-Support guest mode with limited functionality, such as viewing available slots without making a reservation.\n",
+    {
+     "type": "bold",
+     "text": "\n2.Real-Time Parking Availability"
+    },
+    "\n-Display the number of available parking slots in real-time.\n-Highlight the specific location of available slots (e.g., Slot A1, Slot B2).\n\n",
+    {
+     "type": "bold",
+     "text": "3.Slot Reservation"
+    },
+    "\n-Allow users to reserve a parking slot through a web app.\n-Include two option to book or free the parking slot.\n\n",
+    {
+     "type": "bold",
+     "text": "4.Booking Conflict Prevention"
+    },
+    "\n-Ensure that each slot can only be reserved or assigned to one vehicle at a time.\n\n",
+    {
+     "type": "bold",
+     "text": "5.User Notifications"
+    },
+    "\n-Notify users of slot reservation status, release or any changes via email.\n\n",
+    {
+     "type": "bold",
+     "text": "6.Payment Integration"
+    },
+    "(If time permits)\n-Include user wallets to notify the users of their usage fees."
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "1."
+    },
+    {
+     "type": "bold",
+     "text": "User Login/Signup"
+    },
+    {
+     "type": "plain",
+     "text": "\n-Allow users to create accounts using email.\n-Support guest mode with limited functionality, such as viewing available slots without making a reservation.\n"
+    },
+    {
+     "type": "bold",
+     "text": "\n2.Real-Time Parking Availability"
+    },
+    {
+     "type": "plain",
+     "text": "\n-Display the number of available parking slots in real-time.\n-Highlight the specific location of available slots (e.g., Slot A1, Slot B2).\n\n"
+    },
+    {
+     "type": "bold",
+     "text": "3.Slot Reservation"
+    },
+    {
+     "type": "plain",
+     "text": "\n-Allow users to reserve a parking slot through a web app.\n-Include two option to book or free the parking slot.\n\n"
+    },
+    {
+     "type": "bold",
+     "text": "4.Booking Conflict Prevention"
+    },
+    {
+     "type": "plain",
+     "text": "\n-Ensure that each slot can only be reserved or assigned to one vehicle at a time.\n\n"
+    },
+    {
+     "type": "bold",
+     "text": "5.User Notifications"
+    },
+    {
+     "type": "plain",
+     "text": "\n-Notify users of slot reservation status, release or any changes via email.\n\n"
+    },
+    {
+     "type": "bold",
+     "text": "6.Payment Integration"
+    },
+    {
+     "type": "plain",
+     "text": "(If time permits)\n-Include user wallets to notify the users of their usage fees."
+    }
+   ]
+  },
+  {
+   "id": 76497,
+   "type": "message",
+   "date": "2025-01-26T11:06:59",
+   "date_unixtime": "1737869819",
+   "from": "Bilal",
+   "from_id": "user1607239427",
+   "reply_to_message_id": 76496,
+   "text": [
+    {
+     "type": "mention",
+     "text": "@everyone"
+    },
+    " these can be the requirements for the application and what user expects from the app"
+   ],
+   "text_entities": [
+    {
+     "type": "mention",
+     "text": "@everyone"
+    },
+    {
+     "type": "plain",
+     "text": " these can be the requirements for the application and what user expects from the app"
+    }
+   ]
+  },
+  {
+   "id": 76498,
+   "type": "message",
+   "date": "2025-01-26T11:07:10",
+   "date_unixtime": "1737869830",
+   "from": "Bilal",
+   "from_id": "user1607239427",
+   "text": "please check and confirm",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "please check and confirm"
+    }
+   ]
+  },
+  {
+   "id": 76499,
+   "type": "message",
+   "date": "2025-01-26T11:11:02",
+   "date_unixtime": "1737870062",
+   "from": "Sam",
+   "from_id": "user1508065553",
+   "text": "yeah fine",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "yeah fine"
+    }
+   ]
+  },
+  {
+   "id": 76500,
+   "type": "message",
+   "date": "2025-01-26T11:11:14",
+   "date_unixtime": "1737870074",
+   "from": "Sam",
+   "from_id": "user1508065553",
+   "text": "I'll make a github and we can start working",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "I'll make a github and we can start working"
+    }
+   ]
+  },
+  {
+   "id": 76501,
+   "type": "message",
+   "date": "2025-01-26T11:11:26",
+   "date_unixtime": "1737870086",
+   "from": "Bilal",
+   "from_id": "user1607239427",
+   "text": "sure",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "sure"
+    }
+   ]
+  },
+  {
+   "id": 76502,
+   "type": "message",
+   "date": "2025-01-26T11:11:35",
+   "date_unixtime": "1737870095",
+   "edited": "2025-01-26T12:45:07",
+   "edited_unixtime": "1737875707",
+   "from": "Sam",
+   "from_id": "user1508065553",
+   "text": "Please send your github usernames everyone",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Please send your github usernames everyone"
+    }
+   ]
+  },
+  {
+   "id": 76503,
+   "type": "message",
+   "date": "2025-01-26T11:12:41",
+   "date_unixtime": "1737870161",
+   "edited": "2025-01-26T11:18:16",
+   "edited_unixtime": "1737870496",
+   "from": "Bilal",
+   "from_id": "user1607239427",
+   "reply_to_message_id": 76502,
+   "text": "Bilal22293",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Bilal22293"
+    }
+   ],
+   "reactions": [
+     {
+      "type": "emoji",
+      "count": 1,
+      "emoji": "👍",
+      "recent": [
+       {
+        "from": "Sam",
+        "from_id": "user1508065553",
+        "date": "2025-01-26T11:18:16"
+       }
+      ]
+     }
+    ]
+  },
+  {
+   "id": 76505,
+   "type": "message",
+   "date": "2025-01-26T11:30:03",
+   "date_unixtime": "1737871203",
+   "from": "Sam",
+   "from_id": "user1508065553",
+   "text": [
+    {
+     "type": "link",
+     "text": "https://github.com/CS303-G2/A1-Smart-Parking-System"
+    },
+    "\n\nhere's the github"
+   ],
+   "text_entities": [
+    {
+     "type": "link",
+     "text": "https://github.com/CS303-G2/A1-Smart-Parking-System"
+    },
+    {
+     "type": "plain",
+     "text": "\n\nhere's the github"
+    }
+   ]
+  },
+  {
+   "id": 76508,
+   "type": "message",
+   "date": "2025-01-26T11:54:41",
+   "date_unixtime": "1737872681",
+   "from": "IM Sunil Patra",
+   "from_id": "user2048135164",
+   "text": "Sunilsangfroid",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Sunilsangfroid"
+    }
+   ]
+  },
+  {
+   "id": 76512,
+   "type": "message",
+   "date": "2025-01-26T12:59:11",
+   "date_unixtime": "1737876551",
+   "from": "Luv Sharma",
+   "from_id": "user7676109429",
+   "text": "Stormbreakerr20",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Stormbreakerr20"
+    }
+   ]
+  },
+  {
+   "id": 76513,
+   "type": "message",
+   "date": "2025-01-26T13:01:42",
+   "date_unixtime": "1737876702",
+   "edited": "2025-01-26T13:01:50",
+   "edited_unixtime": "1737876710",
+   "from": "Sam",
+   "from_id": "user1508065553",
+   "text": [
+    "I've added you all 👍🏻\nAccept it here : ",
+    {
+     "type": "link",
+     "text": "https://github.com/CS303-G2"
+    },
+    "\n\nThis is the repo: ",
+    {
+     "type": "link",
+     "text": "https://github.com/CS303-G2/A1-Smart-Parking-System"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "I've added you all 👍🏻\nAccept it here : "
+    },
+    {
+     "type": "link",
+     "text": "https://github.com/CS303-G2"
+    },
+    {
+     "type": "plain",
+     "text": "\n\nThis is the repo: "
+    },
+    {
+     "type": "link",
+     "text": "https://github.com/CS303-G2/A1-Smart-Parking-System"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 76523,
+   "type": "message",
+   "date": "2025-01-26T17:05:20",
+   "date_unixtime": "1737891320",
+   "from": "Sam",
+   "from_id": "user1508065553",
+   "text": "Guys\nMe and Krish have almost completed the backend server",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Guys\nMe and Krish have almost completed the backend server"
+    }
+   ]
+  },
+  {
+   "id": 76524,
+   "type": "message",
+   "date": "2025-01-26T17:06:23",
+   "date_unixtime": "1737891383",
+   "from": "Sam",
+   "from_id": "user1508065553",
+   "text": "Luv, what are the updates on the frontend part?",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Luv, what are the updates on the frontend part?"
+    }
+   ]
+  },
+  {
+   "id": 76525,
+   "type": "message",
+   "date": "2025-01-26T17:07:56",
+   "date_unixtime": "1737891476",
+   "from": "Sam",
+   "from_id": "user1508065553",
+   "text": "I have pushed the changes to github",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "I have pushed the changes to github"
+    }
+   ]
+  },
+  {
+   "id": 76526,
+   "type": "message",
+   "date": "2025-01-26T17:08:33",
+   "date_unixtime": "1737891513",
+   "from": "Sam",
+   "from_id": "user1508065553",
+   "text": "Bilal, please review the code and check if everything is working correctly",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Bilal, please review the code and check if everything is working correctly"
+    }
+   ]
+  },
+  {
+   "id": 76528,
+   "type": "message",
+   "date": "2025-01-26T17:46:11",
+   "date_unixtime": "1737893771",
+   "from": "Bilal",
+   "from_id": "user1607239427",
+   "text": "Sure I will let you know of any errors",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Sure I will let you know of any errors"
+    }
+   ]
+  },
+  {
+   "id": 76531,
+   "type": "message",
+   "date": "2025-01-26T18:42:20",
+   "date_unixtime": "1737897140",
+   "from": "Luv Sharma",
+   "from_id": "user7676109429",
+   "reply_to_message_id": 76524,
+   "text": "Ill try to finish by tonight",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Ill try to finish by tonight"
+    }
+   ]
+  },
+  {
+   "id": 76532,
+   "type": "message",
+   "date": "2025-01-26T18:42:28",
+   "date_unixtime": "1737897148",
+   "from": "Luv Sharma",
+   "from_id": "user7676109429",
+   "text": "Deadline kab hai?",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Deadline kab hai?"
+    }
+   ]
+  },
+  {
+   "id": 76535,
+   "type": "message",
+   "date": "2025-01-26T18:43:19",
+   "date_unixtime": "1737897199",
+   "from": "Bilal",
+   "from_id": "user1607239427",
+   "text": "31st jan",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "31st jan"
+    }
+   ]
+  },
+  {
+   "id": 76536,
+   "type": "message",
+   "date": "2025-01-26T18:43:28",
+   "date_unixtime": "1737897208",
+   "from": "Luv Sharma",
+   "from_id": "user7676109429",
+   "text": "Ok",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Ok"
+    }
+   ]
+  },
+  {
+   "id": 76537,
+   "type": "message",
+   "date": "2025-01-26T18:44:21",
+   "date_unixtime": "1737897261",
+   "from": "Bilal",
+   "from_id": "user1607239427",
+   "text": "Should I give you a figma file then you can code the frontend?",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Should I give you a figma file then you can code the frontend?"
+    }
+   ]
+  },
+  {
+   "id": 76538,
+   "type": "message",
+   "date": "2025-01-26T18:54:29",
+   "date_unixtime": "1737897869",
+   "from": "Luv Sharma",
+   "from_id": "user7676109429",
+   "text": "I have started with some design, but if you have made one then you can share",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "I have started with some design, but if you have made one then you can share"
+    }
+   ]
+  },
+  {
+   "id": 76539,
+   "type": "message",
+   "date": "2025-01-26T18:54:42",
+   "date_unixtime": "1737897882",
+   "from": "Luv Sharma",
+   "from_id": "user7676109429",
+   "text": "Nya bnana padega toh rhene do",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Nya bnana padega toh rhene do"
+    }
+   ]
+  },
+  {
+   "id": 76543,
+   "type": "message",
+   "date": "2025-01-26T19:38:44",
+   "date_unixtime": "1737900524",
+   "from": "Bilal",
+   "from_id": "user1607239427",
+   "text": "Testing report GitHub pe daal di",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Testing report GitHub pe daal di"
+    }
+   ]
+  },
+  {
+   "id": 76544,
+   "type": "message",
+   "date": "2025-01-26T19:39:21",
+   "date_unixtime": "1737900561",
+   "from": "Sam",
+   "from_id": "user1508065553",
+   "text": "ok",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "ok"
+    }
+   ]
+  },
+  {
+   "id": 76561,
+   "type": "message",
+   "date": "2025-01-26T23:36:29",
+   "date_unixtime": "1737914789",
+   "from": "Luv Sharma",
+   "from_id": "user7676109429",
+   "text": [
+    {
+     "type": "mention",
+     "text": "@justSam13"
+    },
+    " x_y_z is lot id right? And how do you want me to display this? Like will the user have option to select among level 1,2,3 and then I display a 2 grid for that level?"
+   ],
+   "text_entities": [
+    {
+     "type": "mention",
+     "text": "@justSam13"
+    },
+    {
+     "type": "plain",
+     "text": " x_y_z is lot id right? And how do you want me to display this? Like will the user have option to select among level 1,2,3 and then I display a 2 grid for that level?"
+    }
+   ]
+  },
+  {
+   "id": 76562,
+   "type": "message",
+   "date": "2025-01-26T23:38:31",
+   "date_unixtime": "1737914911",
+   "from": "Krish",
+   "from_id": "user5190451166",
+   "reply_to_message_id": 76561,
+   "text": "X is floor no \nY is row no \nZ is column number \nWe have 3 floors and 10*10 grid in one floor",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "X is floor no \nY is row no \nZ is column number \nWe have 3 floors and 10*10 grid in one floor"
+    }
+   ]
+  },
+  {
+   "id": 76563,
+   "type": "message",
+   "date": "2025-01-26T23:39:04",
+   "date_unixtime": "1737914944",
+   "from": "Krish",
+   "from_id": "user5190451166",
+   "text": "Now user can see all the lots and which are available he can book.",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Now user can see all the lots and which are available he can book."
+    }
+   ]
+  },
+  {
+   "id": 76564,
+   "type": "message",
+   "date": "2025-01-26T23:39:42",
+   "date_unixtime": "1737914982",
+   "from": "Bilal",
+   "from_id": "user1607239427",
+   "text": "I think it's better to first select the level then the lot in that level",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "I think it's better to first select the level then the lot in that level"
+    }
+   ]
+  },
+  {
+   "id": 76565,
+   "type": "message",
+   "date": "2025-01-26T23:40:01",
+   "date_unixtime": "1737915001",
+   "from": "Krish",
+   "from_id": "user5190451166",
+   "reply_to_message_id": 76564,
+   "text": "Hann",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Hann"
+    }
+   ]
+  },
+  {
+   "id": 76566,
+   "type": "message",
+   "date": "2025-01-26T23:40:16",
+   "date_unixtime": "1737915016",
+   "from": "Luv Sharma",
+   "from_id": "user7676109429",
+   "text": "Ok, got it",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Ok, got it"
+    }
+   ]
+  },
+  {
+   "id": 76568,
+   "type": "message",
+   "date": "2025-01-26T23:48:49",
+   "date_unixtime": "1737915529",
+   "from": "Luv Sharma",
+   "from_id": "user7676109429",
+   "text": "Isn't it possible to get a json from the backend?\nLike \n{\"100\":0,....\"199\":0,.....\"399\":0}",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Isn't it possible to get a json from the backend?\nLike \n{\"100\":0,....\"199\":0,.....\"399\":0}"
+    }
+   ]
+  },
+  {
+   "id": 76569,
+   "type": "message",
+   "date": "2025-01-26T23:49:11",
+   "date_unixtime": "1737915551",
+   "from": "Luv Sharma",
+   "from_id": "user7676109429",
+   "text": "Json/dict",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Json/dict"
+    }
+   ]
+  },
+  {
+   "id": 76570,
+   "type": "message",
+   "date": "2025-01-26T23:50:07",
+   "date_unixtime": "1737915607",
+   "edited": "2025-01-26T23:53:28",
+   "edited_unixtime": "1737915808",
+   "from": "Sam",
+   "from_id": "user1508065553",
+   "reply_to_message_id": 76568,
+   "text": "the db is with sql\nso it returns a list",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "the db is with sql\nso it returns a list"
+    }
+   ]
+  },
+  {
+   "id": 76576,
+   "type": "message",
+   "date": "2025-01-26T23:58:38",
+   "date_unixtime": "1737916118",
+   "from": "Luv Sharma",
+   "from_id": "user7676109429",
+   "reply_to_message_id": 76570,
+   "text": "Hmm, I'll modify it on the frontend then",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Hmm, I'll modify it on the frontend then"
+    }
+   ]
+  },
+  {
+   "id": 76577,
+   "type": "message",
+   "date": "2025-01-26T23:58:49",
+   "date_unixtime": "1737916129",
+   "from": "Sam",
+   "from_id": "user1508065553",
+   "text": "hmm",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "hmm"
+    }
+   ]
+  },
+  {
+   "id": 76578,
+   "type": "message",
+   "date": "2025-01-27T00:01:32",
+   "date_unixtime": "1737916292",
+   "from": "Luv Sharma",
+   "from_id": "user7676109429",
+   "file": "video_files/video_1@27-01-2025_00-01-32.mp4",
+   "thumbnail": "video_files/video_1@27-01-2025_00-01-32.mp4_thumb.jpg",
+   "media_type": "video_file",
+   "mime_type": "video/mp4",
+   "duration_seconds": 4,
+   "width": 720,
+   "height": 1280,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 76579,
+   "type": "message",
+   "date": "2025-01-27T00:01:41",
+   "date_unixtime": "1737916301",
+   "from": "Luv Sharma",
+   "from_id": "user7676109429",
+   "text": "So you guys want ki aisa kuch dena select krne ko?",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "So you guys want ki aisa kuch dena select krne ko?"
+    }
+   ]
+  },
+  {
+   "id": 76580,
+   "type": "message",
+   "date": "2025-01-27T00:02:04",
+   "date_unixtime": "1737916324",
+   "from": "Sam",
+   "from_id": "user1508065553",
+   "text": "haan yes",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "haan yes"
+    }
+   ]
+  },
+  {
+   "id": 76581,
+   "type": "message",
+   "date": "2025-01-27T00:02:09",
+   "date_unixtime": "1737916329",
+   "from": "Luv Sharma",
+   "from_id": "user7676109429",
+   "text": "Ok",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Ok"
+    }
+   ]
+  },
+  {
+   "id": 76582,
+   "type": "message",
+   "date": "2025-01-27T00:02:26",
+   "date_unixtime": "1737916346",
+   "from": "Sam",
+   "from_id": "user1508065553",
+   "text": "maybe make the blocks lesser in width",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "maybe make the blocks lesser in width"
+    }
+   ]
+  },
+  {
+   "id": 76583,
+   "type": "message",
+   "date": "2025-01-27T00:02:43",
+   "date_unixtime": "1737916363",
+   "from": "Sam",
+   "from_id": "user1508065553",
+   "text": "we do not really need to display the ids",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "we do not really need to display the ids"
+    }
+   ]
+  },
+  {
+   "id": 76584,
+   "type": "message",
+   "date": "2025-01-27T00:03:21",
+   "date_unixtime": "1737916401",
+   "from": "Luv Sharma",
+   "from_id": "user7676109429",
+   "text": "Okk, abhi I'll just try to complete all the logic then kal ya parso you can check it and recommend all ui changes",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Okk, abhi I'll just try to complete all the logic then kal ya parso you can check it and recommend all ui changes"
+    }
+   ]
+  },
+  {
+   "id": 76585,
+   "type": "message",
+   "date": "2025-01-27T00:03:33",
+   "date_unixtime": "1737916413",
+   "from": "Sam",
+   "from_id": "user1508065553",
+   "text": "yeah ok",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "yeah ok"
+    }
+   ]
+  },
+  {
+   "id": 76655,
+   "type": "message",
+   "date": "2025-01-27T22:15:09",
+   "date_unixtime": "1737996309",
+   "from": "Luv Sharma",
+   "from_id": "user7676109429",
+   "text": "I have pushed the code for frontend, please check and let me know any changes if",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "I have pushed the code for frontend, please check and let me know any changes if"
+    }
+   ]
+  },
+  {
+   "id": 76656,
+   "type": "message",
+   "date": "2025-01-27T22:15:39",
+   "date_unixtime": "1737996339",
+   "from": "Luv Sharma",
+   "from_id": "user7676109429",
+   "text": "Npm I\nNpm run dev \nTo run the frontend",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Npm I\nNpm run dev \nTo run the frontend"
+    }
+   ]
+  },
+  {
+   "id": 76657,
+   "type": "message",
+   "date": "2025-01-27T22:42:06",
+   "date_unixtime": "1737997926",
+   "from": "Bilal",
+   "from_id": "user1607239427",
+   "text": "Jab book-a-lot  aur your-bookings wale page pe hai tab uske text ko white karde (instead of hovering)?",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Jab book-a-lot  aur your-bookings wale page pe hai tab uske text ko white karde (instead of hovering)?"
+    }
+   ]
+  },
+  {
+   "id": 76658,
+   "type": "message",
+   "date": "2025-01-27T22:42:42",
+   "date_unixtime": "1737997962",
+   "from": "Bilal",
+   "from_id": "user1607239427",
+   "text": "Aur jab release kar rhe tab kisi tarah cost dikhane ka tareeka?",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Aur jab release kar rhe tab kisi tarah cost dikhane ka tareeka?"
+    }
+   ]
+  },
+  {
+   "id": 76659,
+   "type": "message",
+   "date": "2025-01-27T22:44:06",
+   "date_unixtime": "1737998046",
+   "from": "Bilal",
+   "from_id": "user1607239427",
+   "text": "Waise to badhiya lag rha",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Waise to badhiya lag rha"
+    }
+   ]
+  },
+  {
+   "id": 76660,
+   "type": "message",
+   "date": "2025-01-27T22:44:12",
+   "date_unixtime": "1737998052",
+   "from": "Krish",
+   "from_id": "user5190451166",
+   "reply_to_message_id": 76659,
+   "text": "Haan",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Haan"
+    }
+   ]
+  },
+  {
+   "id": 76661,
+   "type": "message",
+   "date": "2025-01-27T22:44:35",
+   "date_unixtime": "1737998075",
+   "from": "Krish",
+   "from_id": "user5190451166",
+   "text": "Or time ka bhi implement Kar denge .....",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Or time ka bhi implement Kar denge ....."
+    }
+   ]
+  },
+  {
+   "id": 76662,
+   "type": "message",
+   "date": "2025-01-27T22:51:54",
+   "date_unixtime": "1737998514",
+   "edited": "2025-01-27T22:52:22",
+   "edited_unixtime": "1737998542",
+   "from": "Luv Sharma",
+   "from_id": "user7676109429",
+   "reply_to_message_id": 76657,
+   "text": "Ok, cost aur timings ka kaise Krna bta dena backend mein update krke accordingly",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Ok, cost aur timings ka kaise Krna bta dena backend mein update krke accordingly"
+    }
+   ],
+   "reactions": [
+     {
+      "type": "emoji",
+      "count": 1,
+      "emoji": "👍",
+      "recent": [
+       {
+        "from": "Krish",
+        "from_id": "user5190451166",
+        "date": "2025-01-27T22:52:22"
+       }
+      ]
+     }
+    ]
+  },
+  {
+   "id": 76663,
+   "type": "message",
+   "date": "2025-01-27T23:01:05",
+   "date_unixtime": "1737999065",
+   "edited": "2025-01-27T23:01:18",
+   "edited_unixtime": "1737999078",
+   "from": "Sam",
+   "from_id": "user1508065553",
+   "reply_to_message_id": 76662,
+   "text": "Cost we have done as\n1st floor - 10₹ per hour\n2nd floor - 8₹ per hour\n3rd - 6₹ per hour\n\nThe cost incurred is sent in the response message when the user releases the booked lot.\n\nWe were thinking like this is like a parking lot of a mall in the basement \nSo the floor -1 has the highest charges and it reduces as we go deeper",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Cost we have done as\n1st floor - 10₹ per hour\n2nd floor - 8₹ per hour\n3rd - 6₹ per hour\n\nThe cost incurred is sent in the response message when the user releases the booked lot.\n\nWe were thinking like this is like a parking lot of a mall in the basement \nSo the floor -1 has the highest charges and it reduces as we go deeper"
+    }
+   ]
+  },
+  {
+   "id": 76664,
+   "type": "message",
+   "date": "2025-01-27T23:03:08",
+   "date_unixtime": "1737999188",
+   "from": "Sam",
+   "from_id": "user1508065553",
+   "text": "Also we were thinking of removing the option of selecting the exact parking lot \nIt feels unnecessary \n\nWe would give the option of selecting the basement level\n\nWhat do you guys think?",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Also we were thinking of removing the option of selecting the exact parking lot \nIt feels unnecessary \n\nWe would give the option of selecting the basement level\n\nWhat do you guys think?"
+    }
+   ]
+  },
+  {
+   "id": 76665,
+   "type": "message",
+   "date": "2025-01-27T23:04:39",
+   "date_unixtime": "1737999279",
+   "from": "Krish",
+   "from_id": "user5190451166",
+   "reply_to_message_id": 76664,
+   "text": "If we will remove that , then the front-end wouldn't look.empty ?",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "If we will remove that , then the front-end wouldn't look.empty ?"
+    }
+   ]
+  },
+  {
+   "id": 76666,
+   "type": "message",
+   "date": "2025-01-27T23:05:52",
+   "date_unixtime": "1737999352",
+   "from": "Bilal",
+   "from_id": "user1607239427",
+   "text": "Yeah I think it's better to show lots..",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Yeah I think it's better to show lots.."
+    }
+   ]
+  },
+  {
+   "id": 76667,
+   "type": "message",
+   "date": "2025-01-27T23:06:07",
+   "date_unixtime": "1737999367",
+   "from": "Bilal",
+   "from_id": "user1607239427",
+   "text": "We can reduce the number of lots though..",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "We can reduce the number of lots though.."
+    }
+   ]
+  },
+  {
+   "id": 76668,
+   "type": "message",
+   "date": "2025-01-27T23:06:14",
+   "date_unixtime": "1737999374",
+   "from": "Krish",
+   "from_id": "user5190451166",
+   "reply_to_message_id": 76667,
+   "text": "Yess",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Yess"
+    }
+   ]
+  },
+  {
+   "id": 76671,
+   "type": "message",
+   "date": "2025-01-27T23:12:15",
+   "date_unixtime": "1737999735",
+   "from": "Sam",
+   "from_id": "user1508065553",
+   "reply_to_message_id": 76665,
+   "text": "We could make a ui to select the basement level instead of doing that with a drop-down menu\n\nyk with the cost and the number of available slots etc. imo it would look nice",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "We could make a ui to select the basement level instead of doing that with a drop-down menu\n\nyk with the cost and the number of available slots etc. imo it would look nice"
+    }
+   ]
+  },
+  {
+   "id": 77185,
+   "type": "message",
+   "date": "2025-01-31T23:49:42",
+   "date_unixtime": "1738347582",
+   "from": "Luv Sharma",
+   "from_id": "user7676109429",
+   "text": [
+    {
+     "type": "mention",
+     "text": "@justSam13"
+    },
+    " user bills are not getting updated for multiple bookings it's still showing bill = 10"
+   ],
+   "text_entities": [
+    {
+     "type": "mention",
+     "text": "@justSam13"
+    },
+    {
+     "type": "plain",
+     "text": " user bills are not getting updated for multiple bookings it's still showing bill = 10"
+    }
+   ]
+  },
+  {
+   "id": 77188,
+   "type": "message",
+   "date": "2025-01-31T23:51:42",
+   "date_unixtime": "1738347702",
+   "from": "Sam",
+   "from_id": "user1508065553",
+   "text": "the user is billed when he releases the booking",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "the user is billed when he releases the booking"
+    }
+   ]
+  },
+  {
+   "id": 77189,
+   "type": "message",
+   "date": "2025-01-31T23:51:57",
+   "date_unixtime": "1738347717",
+   "from": "Sam",
+   "from_id": "user1508065553",
+   "text": "according to the time he booked for",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "according to the time he booked for"
+    }
+   ]
+  },
+  {
+   "id": 77192,
+   "type": "message",
+   "date": "2025-01-31T23:56:32",
+   "date_unixtime": "1738347992",
+   "from": "Luv Sharma",
+   "from_id": "user7676109429",
+   "text": "Like if I book 3 tickets then shouldn't the bill be equal to the sum of all three bookings?",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Like if I book 3 tickets then shouldn't the bill be equal to the sum of all three bookings?"
+    }
+   ]
+  },
+  {
+   "id": 77193,
+   "type": "message",
+   "date": "2025-01-31T23:56:45",
+   "date_unixtime": "1738348005",
+   "from": "Sam",
+   "from_id": "user1508065553",
+   "text": "yes",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "yes"
+    }
+   ]
+  },
+  {
+   "id": 77196,
+   "type": "message",
+   "date": "2025-01-31T23:58:08",
+   "date_unixtime": "1738348088",
+   "from": "Luv Sharma",
+   "from_id": "user7676109429",
+   "text": "So you are updating the bill when the booking will be removed?",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "So you are updating the bill when the booking will be removed?"
+    }
+   ]
+  },
+  {
+   "id": 77197,
+   "type": "message",
+   "date": "2025-01-31T23:58:14",
+   "date_unixtime": "1738348094",
+   "from": "Sam",
+   "from_id": "user1508065553",
+   "text": "yes",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "yes"
+    }
+   ]
+  },
+  {
+   "id": 77198,
+   "type": "message",
+   "date": "2025-01-31T23:58:23",
+   "date_unixtime": "1738348103",
+   "from": "Sam",
+   "from_id": "user1508065553",
+   "text": "according to the time he booked for",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "according to the time he booked for"
+    }
+   ]
+  },
+  {
+   "id": 77199,
+   "type": "message",
+   "date": "2025-01-31T23:58:29",
+   "date_unixtime": "1738348109",
+   "from": "Sam",
+   "from_id": "user1508065553",
+   "text": "the cost is per hour",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "the cost is per hour"
+    }
+   ]
+  },
+  {
+   "id": 77200,
+   "type": "message",
+   "date": "2025-01-31T23:59:00",
+   "date_unixtime": "1738348140",
+   "from": "Luv Sharma",
+   "from_id": "user7676109429",
+   "text": "Ok, but what if user wants to delete the booking?",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Ok, but what if user wants to delete the booking?"
+    }
+   ]
+  },
+  {
+   "id": 77201,
+   "type": "message",
+   "date": "2025-01-31T23:59:14",
+   "date_unixtime": "1738348154",
+   "from": "Luv Sharma",
+   "from_id": "user7676109429",
+   "text": "Without actually using the one",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Without actually using the one"
+    }
+   ]
+  },
+  {
+   "id": 77202,
+   "type": "message",
+   "date": "2025-01-31T23:59:43",
+   "date_unixtime": "1738348183",
+   "from": "Luv Sharma",
+   "from_id": "user7676109429",
+   "text": "Ye case ignore Krna kya?",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Ye case ignore Krna kya?"
+    }
+   ]
+  },
+  {
+   "id": 77203,
+   "type": "message",
+   "date": "2025-01-31T23:59:56",
+   "date_unixtime": "1738348196",
+   "from": "Sam",
+   "from_id": "user1508065553",
+   "text": "hmm then we'll have to ask the user for the time when he'll arrive or smth like that",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "hmm then we'll have to ask the user for the time when he'll arrive or smth like that"
+    }
+   ]
+  },
+  {
+   "id": 77204,
+   "type": "message",
+   "date": "2025-02-01T00:00:18",
+   "date_unixtime": "1738348218",
+   "from": "Sam",
+   "from_id": "user1508065553",
+   "text": "we are assuming that when the lot is booked the user has arrived actually",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "we are assuming that when the lot is booked the user has arrived actually"
+    }
+   ]
+  },
+  {
+   "id": 77205,
+   "type": "message",
+   "date": "2025-02-01T00:01:43",
+   "date_unixtime": "1738348303",
+   "from": "Luv Sharma",
+   "from_id": "user7676109429",
+   "text": "Oh ok, then should the user be given the option to remove booking or not in front end?",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Oh ok, then should the user be given the option to remove booking or not in front end?"
+    }
+   ]
+  },
+  {
+   "id": 77206,
+   "type": "message",
+   "date": "2025-02-01T00:02:04",
+   "date_unixtime": "1738348324",
+   "from": "Sam",
+   "from_id": "user1508065553",
+   "text": "where is that option given 🤔",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "where is that option given 🤔"
+    }
+   ]
+  },
+  {
+   "id": 77207,
+   "type": "message",
+   "date": "2025-02-01T00:02:31",
+   "date_unixtime": "1738348351",
+   "from": "Luv Sharma",
+   "from_id": "user7676109429",
+   "text": "In your bookings page I am giving option to delete the bookings",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "In your bookings page I am giving option to delete the bookings"
+    }
+   ]
+  },
+  {
+   "id": 77208,
+   "type": "message",
+   "date": "2025-02-01T00:03:00",
+   "date_unixtime": "1738348380",
+   "from": "Sam",
+   "from_id": "user1508065553",
+   "text": "I thought that was the release booking ?",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "I thought that was the release booking ?"
+    }
+   ]
+  },
+  {
+   "id": 77209,
+   "type": "message",
+   "date": "2025-02-01T00:03:58",
+   "date_unixtime": "1738348438",
+   "from": "Luv Sharma",
+   "from_id": "user7676109429",
+   "text": "I don't think any user will manually release the booking ever, I'll have to set some sort of timer.",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "I don't think any user will manually release the booking ever, I'll have to set some sort of timer."
+    }
+   ]
+  },
+  {
+   "id": 77210,
+   "type": "message",
+   "date": "2025-02-01T00:04:30",
+   "date_unixtime": "1738348470",
+   "from": "Sam",
+   "from_id": "user1508065553",
+   "text": "but we don't know how long the user plans to stay",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "but we don't know how long the user plans to stay"
+    }
+   ]
+  },
+  {
+   "id": 77211,
+   "type": "message",
+   "date": "2025-02-01T00:05:09",
+   "date_unixtime": "1738348509",
+   "from": "Luv Sharma",
+   "from_id": "user7676109429",
+   "text": "So price is same irrespective of hrs?",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "So price is same irrespective of hrs?"
+    }
+   ]
+  },
+  {
+   "id": 77212,
+   "type": "message",
+   "date": "2025-02-01T00:05:20",
+   "date_unixtime": "1738348520",
+   "edited": "2025-02-01T00:05:33",
+   "edited_unixtime": "1738348533",
+   "from": "Sam",
+   "from_id": "user1508065553",
+   "text": "it's per hour",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "it's per hour"
+    }
+   ]
+  },
+  {
+   "id": 77213,
+   "type": "message",
+   "date": "2025-02-01T00:06:00",
+   "date_unixtime": "1738348560",
+   "from": "Sam",
+   "from_id": "user1508065553",
+   "text": "1st floor, 10 per hour\n2nd floor, 8 per hour",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "1st floor, 10 per hour\n2nd floor, 8 per hour"
+    }
+   ]
+  },
+  {
+   "id": 77214,
+   "type": "message",
+   "date": "2025-02-01T00:06:02",
+   "date_unixtime": "1738348562",
+   "from": "Sam",
+   "from_id": "user1508065553",
+   "text": "like this",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "like this"
+    }
+   ]
+  },
+  {
+   "id": 77215,
+   "type": "message",
+   "date": "2025-02-01T00:06:12",
+   "date_unixtime": "1738348572",
+   "from": "Luv Sharma",
+   "from_id": "user7676109429",
+   "text": "Ok, then I'll just leave the user to manually release the slot",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Ok, then I'll just leave the user to manually release the slot"
+    }
+   ]
+  },
+  {
+   "id": 77216,
+   "type": "message",
+   "date": "2025-02-01T00:06:21",
+   "date_unixtime": "1738348581",
+   "from": "Sam",
+   "from_id": "user1508065553",
+   "text": "yeah",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "yeah"
+    }
+   ]
+  },
+  {
+   "id": 77217,
+   "type": "message",
+   "date": "2025-02-01T00:06:43",
+   "date_unixtime": "1738348603",
+   "from": "Sam",
+   "from_id": "user1508065553",
+   "text": "maybe change the text from 'Remove' to 'Release'",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "maybe change the text from 'Remove' to 'Release'"
+    }
+   ]
+  },
+  {
+   "id": 77218,
+   "type": "message",
+   "date": "2025-02-01T00:07:12",
+   "date_unixtime": "1738348632",
+   "from": "Sam",
+   "from_id": "user1508065553",
+   "text": "also when the booking is released, just show the text response from the server maybe in a popup or something",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "also when the booking is released, just show the text response from the server maybe in a popup or something"
+    }
+   ]
+  },
+  {
+   "id": 77219,
+   "type": "message",
+   "date": "2025-02-01T00:07:37",
+   "date_unixtime": "1738348657",
+   "from": "Sam",
+   "from_id": "user1508065553",
+   "text": "it shows the cost incurred",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "it shows the cost incurred"
+    }
+   ]
+  },
+  {
+   "id": 77221,
+   "type": "message",
+   "date": "2025-02-01T00:08:31",
+   "date_unixtime": "1738348711",
+   "from": "Luv Sharma",
+   "from_id": "user7676109429",
+   "reply_to_message_id": 77217,
+   "text": "Ok",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Ok"
+    }
+   ]
+  },
+  {
+   "id": 77225,
+   "type": "message",
+   "date": "2025-02-01T00:25:24",
+   "date_unixtime": "1738349724",
+   "from": "Luv Sharma",
+   "from_id": "user7676109429",
+   "text": "I have added the profile page and cost",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "I have added the profile page and cost"
+    }
+   ]
+  },
+  {
+   "id": 77226,
+   "type": "message",
+   "date": "2025-02-01T00:29:12",
+   "date_unixtime": "1738349952",
+   "from": "Sam",
+   "from_id": "user1508065553",
+   "text": "nice :)",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "nice :)"
+    }
+   ]
+  },
+  {
+   "id": 77346,
+   "type": "message",
+   "date": "2025-02-02T11:48:51",
+   "date_unixtime": "1738477131",
+   "from": "Sam",
+   "from_id": "user1508065553",
+   "text": "so guys today's the day of submission",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "so guys today's the day of submission"
+    }
+   ]
+  },
+  {
+   "id": 77347,
+   "type": "message",
+   "date": "2025-02-02T11:49:10",
+   "date_unixtime": "1738477150",
+   "from": "Sam",
+   "from_id": "user1508065553",
+   "text": "everything finalized and pushed to github?",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "everything finalized and pushed to github?"
+    }
+   ]
+  }
+ ]
+}
