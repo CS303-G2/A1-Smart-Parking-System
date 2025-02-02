@@ -1,4 +1,4 @@
-# A1-Smart-Parking-System Group 2
+# A1-Smart-Parking-System Group 1
 
 ## Overview
 
